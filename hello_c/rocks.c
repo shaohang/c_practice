@@ -4,4 +4,4 @@ int main ()
 {
 	puts("C Rocks!");
 	return 0;
-}
+}   
