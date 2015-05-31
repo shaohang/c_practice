@@ -6,3 +6,6 @@ scuba_diver: scuba_diver.c
 
 enumtest: enumtest.c
 	gcc enumtest.c -o enumtest
+
+tour: tour.c
+	gcc tour.c -o tour
