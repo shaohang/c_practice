@@ -8,4 +8,7 @@ enumtest: enumtest.c
 	gcc enumtest.c -o enumtest
 
 tour: tour.c
-	gcc tour.c -o tour
+	gcc -g  tour.c -o tour
+
+spies: spies.c
+	gcc -g spies.c -o spies

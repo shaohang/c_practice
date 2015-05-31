@@ -65,6 +65,8 @@ int main(){
 	
 	}
 	display(start);
+	
+	release(start);
 
 	return 0;
 }
