@@ -12,3 +12,46 @@ tour: tour.c
 
 spies: spies.c
 	gcc -g spies.c -o spies
+
+find: find.c
+	gcc find.c -o find
+
+test_drive: test_drive.c
+	gcc test_drive.c -o test_drive
+
+dear_johns: dear_johns.c
+	gcc dear_johns.c -o dear_johns
+
+price_drinks: price_drinks.c
+	gcc price_drinks.c -o price_drinks
+
+encrypt.o: encrypt.c
+	gcc -c encrypt.c -o encrypt.o
+
+checksum.o: checksum.c
+	gcc -c checksum.c -o checksum.o
+
+libhfsecurity.a: encrypt.o checksum.o
+	ar -rcs libhfsecurity.a encrypt.o checksum.o
+
+bank_vault: bank_vault.c libhfsecurity.a
+	gcc bank_vault.c -I .  -L . libhfsecurity.a  -o bank_vault
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
